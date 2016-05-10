@@ -89,10 +89,7 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
   height: 105vh;
 /*  top: 0;*/
   box-shadow: 0px 0px 15px 0px black;
-  -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+
 }
 
 #bridal-party .cover-left {
