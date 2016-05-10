@@ -25,8 +25,8 @@ $(function(){
 			e.preventDefault();
 			$('.bridesmaids', $bridalParty).hide();
 			$('.groomsmen', $bridalParty).show();
-			$('.cover-left', $bridalParty).animate({ left: '-650px' }, ANIMATION_SPEED);
-			$('.cover-right', $bridalParty).animate({ right: '-650px' }, ANIMATION_SPEED);
+			$('.cover-left', $bridalParty).animate({ left: '-100%' }, ANIMATION_SPEED);
+			$('.cover-right', $bridalParty).animate({ left: '100%' }, ANIMATION_SPEED);
 			// $('.icn-bridal-party', $bridalParty).animate({ bottom: '-140px' }, ANIMATION_SPEED, function(){
 			// 	$(this).animate({ bottom: '-338px' }, ANIMATION_SPEED, function(){
 			// 		$('.cover-left', $bridalParty).animate({ left: '-650px' }, ANIMATION_SPEED);
@@ -38,8 +38,8 @@ $(function(){
 			e.preventDefault();
 			$('.groomsmen', $bridalParty).hide();
 			$('.bridesmaids', $bridalParty).show();
-			$('.cover-left', $bridalParty).animate({ left: '-650px' }, ANIMATION_SPEED);
-			$('.cover-right', $bridalParty).animate({ right: '-650px' }, ANIMATION_SPEED);
+			$('.cover-left', $bridalParty).animate({ left: '-100%' }, ANIMATION_SPEED);
+			$('.cover-right', $bridalParty).animate({ left: '100%' }, ANIMATION_SPEED);
 			$('.back', $bridalParty).animate({ bottom: '-130px'}, ANIMATION_SPEED);
 			// $('.icn-bridal-party', $bridalParty).animate({ bottom: '-140px' }, ANIMATION_SPEED, function(){
 			// 	$(this).animate({ bottom: '-338px' }, ANIMATION_SPEED, function(){
@@ -53,7 +53,7 @@ $(function(){
 			$('.back', $bridalParty).animate({ bottom: '-120px' }, ANIMATION_SPEED, function(){
 				$(this).animate({ bottom: '-226px' }, ANIMATION_SPEED, function(){
 					$('.cover-left', $bridalParty).animate({ left: '0px' }, ANIMATION_SPEED);
-					$('.cover-right', $bridalParty).animate({ right: '0px' }, ANIMATION_SPEED);
+					$('.cover-right', $bridalParty).animate({ left: '50%' }, ANIMATION_SPEED);
 					// $('.icn-bridal-party', $bridalParty).animate({ bottom: '-150px' }, ANIMATION_SPEED, function(){
 					// 	$('.bridesmaides, .groomsmen', $bridalParty).hide();
 					// });
