@@ -70,7 +70,7 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
   position:relative;
     top: 0;
   height: 105vh;
-  width: 100%;
+  width: 100vw;
 }
 
 #bridal-party .groomsmen,
@@ -86,7 +86,7 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
 #bridal-party .cover-left,
 #bridal-party .cover-right {
   position: absolute;
-  width: 650px;
+  width: 50%;
   height: 105vh;
 /*  top: 0;*/
   box-shadow: 0px 0px 15px 0px black;
