@@ -27,6 +27,7 @@ $(function(){
 			$('.groomsmen', $bridalParty).show();
 			$('.cover-left', $bridalParty).animate({ left: '-100%' }, ANIMATION_SPEED);
 			$('.cover-right', $bridalParty).animate({ left: '100%' }, ANIMATION_SPEED);
+			$('.back', $bridalParty).animate({ bottom: '20%'}, ANIMATION_SPEED);
 			// $('.icn-bridal-party', $bridalParty).animate({ bottom: '-140px' }, ANIMATION_SPEED, function(){
 			// 	$(this).animate({ bottom: '-338px' }, ANIMATION_SPEED, function(){
 			// 		$('.cover-left', $bridalParty).animate({ left: '-650px' }, ANIMATION_SPEED);
@@ -40,7 +41,7 @@ $(function(){
 			$('.bridesmaids', $bridalParty).show();
 			$('.cover-left', $bridalParty).animate({ left: '-100%' }, ANIMATION_SPEED);
 			$('.cover-right', $bridalParty).animate({ left: '100%' }, ANIMATION_SPEED);
-			$('.back', $bridalParty).animate({ bottom: '-130px'}, ANIMATION_SPEED);
+			$('.back', $bridalParty).animate({ bottom: '20%'}, ANIMATION_SPEED);
 			// $('.icn-bridal-party', $bridalParty).animate({ bottom: '-140px' }, ANIMATION_SPEED, function(){
 			// 	$(this).animate({ bottom: '-338px' }, ANIMATION_SPEED, function(){
 			// 		$('.cover-left', $bridalParty).animate({ left: '-650px' }, ANIMATION_SPEED);
@@ -51,7 +52,7 @@ $(function(){
 		.on('click', '.back', function(e){
 			e.preventDefault();
 			$('.back', $bridalParty).animate({ bottom: '-120px' }, ANIMATION_SPEED, function(){
-				$(this).animate({ bottom: '-226px' }, ANIMATION_SPEED, function(){
+				$(this).animate({ bottom: '-20%' }, ANIMATION_SPEED, function(){
 					$('.cover-left', $bridalParty).animate({ left: '0px' }, ANIMATION_SPEED);
 					$('.cover-right', $bridalParty).animate({ left: '50%' }, ANIMATION_SPEED);
 					// $('.icn-bridal-party', $bridalParty).animate({ bottom: '-150px' }, ANIMATION_SPEED, function(){

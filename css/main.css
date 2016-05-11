@@ -32,6 +32,8 @@ body {
   font-size: 18px;
   background-color: #;
 
+  overflow-x: hidden;
+
 }
 
 h1 {
@@ -68,12 +70,11 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
 
 #bridal-party {
   position:relative;
-    top: 0;
+  top: 0;
   height: 105vh;
-  overflow: hidden;
 }
 
-#bridal-party .groomsmen,
+#bridal-party .groomsmen ,
 #bridal-party .bridesmaids {
   /*position: absolute;
 */  /*top: 50%;
@@ -81,6 +82,19 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
   transform: translate(-50%, -50%);*/
   text-align: center;
   z-index: -1;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#bridal-party .groomsmen {
+  background: url(../img/mint-paint-edited.png)  no-repeat top left fixed;
+
+}
+
+#bridal-party .bridesmaids {
+  background: url(../img/white-wood-edited.png)  no-repeat center center fixed;
 }
 
 #bridal-party .cover-left,
@@ -88,7 +102,6 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
   position: absolute;
   width: 50%;
   height: 105vh;
-/*  top: 0;*/
   box-shadow: 0px 0px 15px 0px black;
 
 }
@@ -105,11 +118,12 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
   z-index: 2;
 }
 
-#bridal-party .back {/*
+#bridal-party .back {
   position: absolute;
-  bottom: 0;*/
+  bottom: -20%;
   transform: translate(-50%, -50%);
   left: 50%;
+  z-index: 0;
 }
 
 #festivities {
