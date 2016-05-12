@@ -36,9 +36,10 @@ body {
 
 }
 
-h1 {
+h1, h2 {
   font-family: "Euphoria";
 }
+
 
 #home .image {
 background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
@@ -161,4 +162,67 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
   transform: translate(-50%, -50%);
   left: 50%;
 }
+
+
+.selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+.groomsman1{background-image:url(../img/jabari.jpg);}
+.groomsman2{background-image:url(../img/jabari.jpg);}
+
+.bridesmaid1{background-image:url(../img/jabari.jpg);}
+.bridesmaid2{background-image:url(../img/jabari.jpg);}
+.bridesmaid3{background-image:url(../img/jabari.jpg);}
+.bridesmaid4{background-image:url(../img/jabari.jpg);}
+
+.selector input:active +.party-selector{
+  opacity: .9;
+  width:200px;height:200px;
+}
+.selector input:checked +.party-selector{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+
+  width:200px;height:200px;
+}
+.party-selector{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:150px;height:150px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.party-selector:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+.reveal-if-active {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: scale(0.8);
+  transition: 0.3s;
+  
+}
+
+input[type="radio"]:checked ~ .reveal-if-active,
+input[type="checkbox"]:checked ~ .reveal-if-active {
+  opacity: 1;
+  max-height: 100px; /* little bit of a magic number :( */
+  overflow: visible;
+}
+
+
 

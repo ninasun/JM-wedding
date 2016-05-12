@@ -55,11 +55,11 @@ $(function(){
 				$(this).animate({ bottom: '-20%' }, ANIMATION_SPEED, function(){
 					$('.cover-left', $bridalParty).animate({ left: '0px' }, ANIMATION_SPEED);
 					$('.cover-right', $bridalParty).animate({ left: '50%' }, ANIMATION_SPEED);
+					$("input:radio").attr("checked", false);
 					// $('.icn-bridal-party', $bridalParty).animate({ bottom: '-150px' }, ANIMATION_SPEED, function(){
 					// 	$('.bridesmaides, .groomsmen', $bridalParty).hide();
 					// });
 				});
 			});
 		})
-
 })

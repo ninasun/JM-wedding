@@ -12,7 +12,7 @@
 		<div class="image"> </div>
 		<div class="lighten"> </div>
 		<div class="title"><h1>James & Michelle</h1>
-			<h2>are getting married</h2>
+			<h3>are getting married</h3>
 		</div>
 	</section>
 	<section id="about">
@@ -28,27 +28,55 @@
         </div>	
 		<div class="groomsmen">
 			<h2>Groomsmen</h2>
-			<div id="groomsman1" class="info"> 
-				<h3>Rohan</h3>
-			</div>
-			<div id="groomsman2" class="info">
-				<h3>Nislan</h3>
-			</div>
+			<div class="selector">
+				<table>
+				<tr>
+				<td>
+        			<input id="groomsman1" type="radio" name="groomsmen" value="groomsman1" />
+        			<label class="party-selector groomsman1" for="groomsman1"></label>
+        			<div class="reveal-if-active">G1 Name</div>
+				</td>
+				<td>
+        			<input id="groomsman2" type="radio" name="groomsmen" value="groomsman2" />
+        			<label class="party-selector groomsman2" for="groomsman2"></label>
+        			<div class="reveal-if-active">G2</div>
+				</td>
+				</tr>
+				</table>
+        		<!-- <input id="mastercard" type="radio" name="groomsmen" value="mastercard" />
+        		<label class="drinkcard-cc mastercard"for="mastercard"></label> -->
+    		</div>
 		</div>
 		<div class="bridesmaids">
 			<h2>Bridesmaids</h2>
-			<div id="bridesmaid1" class="info">
-				<h3>Doris</h3>
-			</div>
-			<div id="bridesmaid2" class="info">
-				<h3>Sheena</h3>
-			</div>
-			<div id="bridesmaid3" class="info">
-				<h3>Maggie</h3>
-			</div>
-			<div id="bridesmaid4" class="info">
-				<h3>Nina</h3>
-			</div>
+			<div class="selector">
+				<table>
+				<tr>
+				<td>
+        			<input id="bridesmaid1" type="radio" name="bridesmaid" value="bridesmaid1" />
+        			<label class="party-selector bridesmaid1" for="bridesmaid1"></label>
+        			<div class="reveal-if-active">B1 Name</div>
+				</td>
+				<td>
+        			<input id="bridesmaid2" type="radio" name="bridesmaid" value="bridesmaid2" />
+        			<label class="party-selector bridesmaid2" for="bridesmaid2"></label>
+        			<div class="reveal-if-active">B2 Name</div>
+				</td>
+				<td>
+        			<input id="bridesmaid3" type="radio" name="bridesmaid" value="bridesmaid3" />
+        			<label class="party-selector bridesmaid3" for="bridesmaid3"></label>
+        			<div class="reveal-if-active">B3 Name</div>
+				</td>
+				<td>
+        			<input id="bridesmaid4" type="radio" name="bridesmaid" value="bridesmaid4" />
+        			<label class="party-selector bridesmaid4" for="bridesmaid4"></label>
+        			<div class="reveal-if-active">B4 Name</div>
+				</td>
+				</tr>
+				</table>
+        		<!-- <input id="mastercard" type="radio" name="groomsmen" value="mastercard" />
+        		<label class="drinkcard-cc mastercard"for="mastercard"></label> -->
+    		</div>
 		</div>
 		<a href="#" class="back">back</a>
 	</section>
