@@ -83,18 +83,44 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
   transform: translate(-50%, -50%);*/
   text-align: center;
   z-index: -1;
-  -webkit-background-size: cover;
+/*  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+}
+
+#bridal-party .bg{
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    position: relative;
+    top:0;
+    height: 105vh;
 }
 
-#bridal-party .groomsmen {
+#bridal-party h2 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#bridal-party .selector{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#bridal-party .groomsmen .bg{
   background: url(../img/mint-paint-edited.png)  no-repeat top left fixed;
 
 }
 
-#bridal-party .bridesmaids {
+#bridal-party .bridesmaids .bg{
   background: url(../img/white-wood-edited.png)  no-repeat center center fixed;
 }
 
@@ -127,42 +153,6 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
   z-index: 0;
 }
 
-#festivities {
-  position: relative;
-  top: 0;
-  height: 100vh;
-}
-
-#festivities h2 {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#festivities .info {
-  position: absolute;
-  top:0;
-  background: rgba(256, 256, 256, 0.5);
-  height: 100vh;
-  width: 100vw;
-}
-
-#festivities .live-map {
-  position: absolute;
-  background-color: #ffffff;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#festivities .close {
-  position: absolute;
-  bottom: 0;
-  transform: translate(-50%, -50%);
-  left: 50%;
-}
-
 
 .selector input{
     margin:0;padding:0;
@@ -172,6 +162,8 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
 }
 .groomsman1{background-image:url(../img/jabari.jpg);}
 .groomsman2{background-image:url(../img/jabari.jpg);}
+.groomsman3{background-image:url(../img/jabari.jpg);}
+.groomsman4{background-image:url(../img/jabari.jpg);}
 
 .bridesmaid1{background-image:url(../img/jabari.jpg);}
 .bridesmaid2{background-image:url(../img/jabari.jpg);}
@@ -224,5 +216,39 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
   overflow: visible;
 }
 
+#festivities {
+  position: relative;
+  top: 0;
+  height: 100vh;
+}
 
+#festivities h2 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#festivities .info {
+  position: absolute;
+  top:0;
+  background: rgba(256, 256, 256, 0.5);
+  height: 100vh;
+  width: 100vw;
+}
+
+#festivities .live-map {
+  position: absolute;
+  background-color: #ffffff;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#festivities .close {
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
 
