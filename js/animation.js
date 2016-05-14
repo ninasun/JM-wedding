@@ -8,8 +8,10 @@ $(function(){
 	$(window).bind('scroll', function () {
     if ($(window).scrollTop() > stickyHeaderTop) {
         $('#navigation').addClass('fixed');
+        $('#navigation').removeClass('absolute');
     } else {
         $('#navigation').removeClass('fixed');
+        $('#navigation').addClass('absolute');
     }
 	});
 
