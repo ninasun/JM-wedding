@@ -40,6 +40,9 @@ h1, h2 {
   font-family: "Euphoria";
 }
 
+h2 {
+  font-size: 50px;
+}
 
 #home .image {
 background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
@@ -69,10 +72,64 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
   white-space: nowrap;
 }
 
+.fixed {
+  position: fixed;
+  top:0;
+}
+
+#navigation {
+  /*position: absolute;
+  top: 717px;*/
+  /*position: fixed;*/
+  width: 100%;
+  height: 51px;
+  line-height: 51px;
+  background: #222;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+}
+/* line 212, ../sass/screen.scss */
+#navigation ul {
+  overflow: hidden;
+  *zoom: 1;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+/* line 218, ../sass/screen.scss */
+#navigation ul li {
+  display: inline;
+  margin-right: 20px;
+}
+/* line 222, ../sass/screen.scss */
+#navigation ul li.last {
+  margin: 0;
+}
+/* line 228, ../sass/screen.scss */
+#navigation a {
+  /*font-family: "brandon", sans-serif;*/
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  font-size: 0.85714rem;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+}
+/* line 238, ../sass/screen.scss */
+#navigation .active a {
+  color: #000000;
+}
+
+#about {
+  text-align: center;
+  height: 100vh;
+}
+
 #bridal-party {
   position:relative;
   top: 0;
-  height: 105vh;
+  height: 100vh;
 }
 
 #bridal-party .groomsmen ,
@@ -96,7 +153,7 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
     background-size: cover;
     position: relative;
     top:0;
-    height: 105vh;
+    height: 100vh;
 }
 
 #bridal-party h2 {
@@ -128,7 +185,7 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
 #bridal-party .cover-right {
   position: absolute;
   width: 50%;
-  height: 105vh;
+  height: 100vh;
   box-shadow: 0px 0px 15px 0px black;
 
 }
@@ -190,9 +247,9 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
     -webkit-transition: all 100ms ease-in;
        -moz-transition: all 100ms ease-in;
             transition: all 100ms ease-in;
-    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
-       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
-            filter: brightness(1.8) grayscale(1) opacity(.7);
+    -webkit-filter: brightness(1.8) grayscale(.6) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(.6) opacity(.7);
+            filter: brightness(1.8) grayscale(.6) opacity(.7);
 }
 .party-selector:hover{
     -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
@@ -252,3 +309,8 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
   left: 50%;
 }
 
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }

@@ -3,6 +3,17 @@ ANIMATION_SPEED = 400;
 $.easing.def = "easeInOutCubic";
 
 $(function(){
+	var stickyHeaderTop = $('#navigation').offset().top;
+
+	$(window).bind('scroll', function () {
+    if ($(window).scrollTop() > stickyHeaderTop) {
+        $('#navigation').addClass('fixed');
+    } else {
+        $('#navigation').removeClass('fixed');
+    }
+	});
+
+
 	var $bridalParty = $('#bridal-party');
 	$('.groomsmen', $bridalParty).hide();
 	$('.bridesmaids', $bridalParty).hide();
