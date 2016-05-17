@@ -105,7 +105,7 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
 /* line 218, ../sass/screen.scss */
 #navigation ul li {
   display: inline;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 /* line 222, ../sass/screen.scss */
 #navigation ul li.last {
@@ -116,9 +116,9 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
   /*font-family: "brandon", sans-serif;*/
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
-  font-size: 12px;
-  font-size: 0.85714rem;
+  color: #b2b2b2;
+  font-size: 14px;
+ /* font-size: 0.85714rem;*/
   letter-spacing: 1px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
 }
@@ -127,15 +127,60 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
   color: #000000;
 }
 
+#navigation  a:hover {
+  color: #fff;
+}
+
 #about {
   text-align: center;
   height: 100vh;
+  position: relative;
 }
 
 #about .bg{
-  background: url(../img/James-87-edited.jpg) no-repeat right bottom;
+  background: url(../img/white-wood-edited.png) no-repeat center center;
   background-size: cover;
 }
+
+#about .groom-image{
+  height: 200px;
+  width: auto;
+  background-image:url(../img/jabari.jpg);
+}
+#about .bride-image{
+  height: 200px;
+  width: auto;
+  background-image:url(../img/jabari.jpg);
+}
+
+
+#about .himher{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+
+#about h2 {
+  text-align: center;
+}
+/*#about h2 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#about p {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}*/
 
 #bridal-party {
   position:relative;
@@ -200,6 +245,32 @@ background: url(../img/James-6-edited.jpg)  no-repeat center center fixed;
   box-shadow: 0px 0px 15px 0px black;
 
 }
+
+#bridal-party .cover-left a,
+#bridal-party .cover-right a {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Blackjack";
+  text-decoration:none;
+  font-size:30px;
+  color:#000;
+  transition: all 0.2s ease-in;
+
+}
+
+#bridal-party .cover-left a:hover,
+#bridal-party .cover-right a:hover{
+  -webkit-stroke-width: 5.3px;
+  -webkit-stroke-color: #FFFFFF;
+  -webkit-fill-color: #FFFFFF;
+  font-size: 35px;
+  text-shadow: 5px 0px 20px white;
+  color: #000;
+}
+
 
 #bridal-party .cover-left {
   left: 0;
@@ -320,8 +391,128 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
   left: 50%;
 }
 
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 70%;
-      margin: auto;
-  }
+#gallery .slides-container {
+  padding: 100px;
+  display: none;
+  background: url(../img/white-wood-edited.png) no-repeat center center;
+  background-size: cover;
+}
+
+/* Center the slideshow */
+#gallery {
+  /*margin: 0 auto*/
+  height: 100vh;
+  width: auto;
+  position: relative;
+  z-index: -1;
+}
+
+/*#about .bg{
+  background: url(../img/white-wood-edited.png) no-repeat center center;
+  background-size: cover;
+}*/
+
+img {
+    /* Responsive images (ensure images don't scale beyond their parents) */
+  max-width: 100%;
+  /* Part 1: Set a maxium relative to the parent */
+  width: auto\9;
+  /* IE7-8 need help adjusting responsive images */
+  height: auto;
+  /* Part 2: Scale the height according to the width, otherwise you get stretching */
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+    /* Show active item in the pagination */
+/*.slidesjs-pagination .active {
+   color:red;
+}*/
+
+/*.slidesjs-pagination {
+      margin: 6px 0 0;
+      float: center;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+*/
+
+.slidesjs-pagination {
+  margin: 6px 0 0;
+  float: right;
+  list-style: none;
+}
+
+.slidesjs-pagination li {
+  float: left;
+  margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+  display: block;
+  width: 20px;
+  height: 0;
+  padding-top: 20px;
+  /*background-image: url(../img/jabari.jpg);*/
+  /*background-position: 0 0;*/
+  float: left;
+  overflow: hidden;
+  background-color: #e6e6e6;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+  /* background-position: 0 -13px;*/
+  background-color:  #b3ffd9;
+}
+
+.slidesjs-pagination li a:hover {
+  /*background-position: 0 -26px*/
+  background-color:  #b3ffd9;
+}
+
+    /*#gallery a:link,
+    #gallery a:visited {
+      color: #333
+    }
+
+    #gallery a:hover,
+    #gallery a:active {
+      color: #9e2020
+    }*/
+
+#gallery .slidesjs-navigation {
+  margin-top:3px;
+  left:50%;
+}
+
+#gallery .slidesjs-previous {
+  margin-right: 5px;
+  float: left;
+}
+
+#gallery .slidesjs-next {
+  margin-right: 5px;
+  float: left;
+}
+
+#gallery .left-button {
+  background-image: url(../img/jabari.jpg);
+  width: 40px;
+  height: 40px;
+}
+
+#gallery .right-button {
+  background-image: url(../img/jabari.jpg);
+  width: 40px;
+  height: 40px;
+}
+
+.navbar {
+  overflow: hidden
+}

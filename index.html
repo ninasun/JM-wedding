@@ -5,7 +5,9 @@
 <link rel="stylesheet" href="css/main.css">
 <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="js/jquery.slides.min.js"></script>
 <script type="text/javascript" src="js/animation.js"></script>
+<meta name="viewport" content="width=device-width">
 </head>
 <body style = "margin:0">
 	<section id="home">
@@ -30,16 +32,40 @@
 
 	<section id="about">
 		<div class="bg"></div>
-		<h2>About Us</h2>
-		<p>Something about us goes here.</p>
+		<div class="himher">
+		<table>
+			<tr>
+				<td><h2>Him</h2></td>
+				<td><h2>Her</h2></td>
+			</tr>
+			<tr>
+				<td><div class="groom-image"></div></td>
+				<td><div class="bride-image"></div></td>
+			</tr>
+			<tr>
+				<td><table>
+					<tr><td>Hometown:</td><td>Carmel, Indiana</td></tr>
+  					<tr><td>Hobbies:</td><td>P90X3</td></tr>
 
+				</table></td>
+				<td><table>
+					<tr><td>Hometown:</td><td>Miami, Florida</tr>
+					<tr><td>Hobbies:</td><td>Baking</td></tr>
+				</table></td>
+			</tr>
+		</table>
+		</div>
+		<div class="us">
+		<h2> Us</h2>
+		<p>Something about us goes here.</p>
+		</div>
 	</section>
 	<section id="bridal-party">
 		<div class="cover-left">
-        	<a href="#" class="heading-meet-the-bridesmaides"></a>
+        	<a href="#" class="heading-meet-the-bridesmaides">Meet the Bridesmaids</a>
         </div>
         <div class="cover-right">
-        	<a href="#" class="heading-meet-the-groomsmen"></a>
+        	<a href="#" class="heading-meet-the-groomsmen">Meet the Groomsmen</a>
         </div>	
 		<div class="groomsmen">
 			<div class="bg"></div>
@@ -125,7 +151,14 @@
 
     </section>
     <section id="gallery">
-
+		<div class="slides-container">
+      		<img src="img/James-87-edited.jpg" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+      		<img src="img/James-6-edited.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
+      		<img src="img/Jabari.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
+      		<img src="img/mint-paint.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+      		<a href="#" class="slidesjs-previous slidesjs-navigation"><div class="left-button"></div></a>
+      		<a href="#" class="slidesjs-next slidesjs-navigation"><div class="right-button"></div></a>
+    </div>
     </section>
 
 

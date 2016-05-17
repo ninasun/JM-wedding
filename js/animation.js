@@ -34,7 +34,7 @@ $(function(){
 
 
 	$bridalParty
-		.on('click', '.cover-right', function(e){
+		.on('click', '.cover-right a', function(e){
 			e.preventDefault();
 			$('.bridesmaids', $bridalParty).hide();
 			$('.groomsmen', $bridalParty).show();
@@ -48,7 +48,7 @@ $(function(){
 			// 		$('.icn-back', $bridalParty).animate({ bottom: '-130px' }, ANIMATION_SPEED);
 			// 	});
 		})
-		.on('click', '.cover-left', function(e){
+		.on('click', '.cover-left a', function(e){
 			e.preventDefault();
 			$('.groomsmen', $bridalParty).hide();
 			$('.bridesmaids', $bridalParty).show();
@@ -74,5 +74,37 @@ $(function(){
 					// });
 				});
 			});
-		})
+		});
+
+		$('.slides-container').slidesjs({
+        width: 940,
+        height: 528,
+        navigation: {
+          active: false,
+          effect: "fade"
+        },
+        pagination: {
+          effect: "fade"
+        },
+        play: {
+        	// [boolean] Generate the play and stop buttons.
+      		active: false,
+	      	effect: "fade",
+	        // [string] Can be either "slide" or "fade".
+	      	interval: 8000,
+	        // [number] Time spent on each slide in milliseconds.
+	      	auto: true,
+	        // [boolean] Start playing the slideshow on load.
+	        // [boolean] show/hide stop and play buttons
+	      	pauseOnHover: true,
+	        // [boolean] pause a playing slideshow on hover
+	      	restartDelay: 2500
+	        // [number] restart delay on inactive slideshow
+    	},
+        effect: {
+          fade: {
+            speed: 400
+          }
+        }
+      });
 })
